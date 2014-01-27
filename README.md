@@ -1,10 +1,8 @@
-# Making Things Beautiful / Making Beautiful Things
+## Making Things Beautiful / Making Beautiful Things
 
-Issue tracker and static web elements for Making Things Beautiful / Making Beautiful Things
+### Office Hours
 
-## Office Hours
-
-I'm am holding office hours this semester (Spring 2014) for ITP students wishing to make their work and ideas more beautiful. Some notes:
+I'm am holding office hours this semester (Spring 2014) for ITP students wishing to create more beautiful things and things that are more beautiful.
 
 1. Appropriate topics include the development of beautiful and meaningful concepts, the creation of beautiful and refined projects and the documentation of those projects in a beautiful and communicative way.
 
