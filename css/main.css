@@ -7,34 +7,55 @@
 
 
 body {
-	background: #25262b;
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+	background: #fff;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
 	padding-bottom: 20px;
 
 }
 
 h1, h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
 	text-transform: uppercase;
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+}
+
+h1 {
+	background: #fff;
+	display: inline-block;
+	color: #323239;
 }
 
 h2 {
-
-   display: inline-block;
-   padding: 6px;	
+	color: #fff;
+	font-weight: 100;	
+	display: inline-block;
+	padding: 6px 18px;	
 }
 
 .jumbotron {
-	background: #fff;
+	background: #323239;
+}
+
+.jumbotron .container p {
+	color: #fff;
 }
 
 .about, .issues, .purchase {
-	background: #fff;
+	background: #323239;
 }
 
+.about {
+	background: #39C0AA;
+}
 
+.issues {
+	background: #F67075;
+}
+
+.purchase {
+	background: #8DC936;
+}
 
 
 
