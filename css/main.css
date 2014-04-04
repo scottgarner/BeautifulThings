@@ -7,11 +7,11 @@
 
 
 body {
-	background: #fff;
+	background: #323239;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
-	padding-bottom: 20px;
-
+	font-size: 14pt;
+	color: #fff;
 }
 
 h1, h2 {
@@ -31,7 +31,41 @@ h2 {
 	font-weight: 100;	
 	display: inline-block;
 	padding: 6px 18px;	
+	font-size: 1.2em;
 }
+
+footer {
+	font-size: .8em;
+	padding-bottom: 12px;
+}
+
+#ipadCenter {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: #E6AA73;
+}
+
+#ipad {
+	position: relative;
+	top: 32px;
+	left: 50%;
+	margin-left: -322px;
+}
+
+#ipadFrame {
+	position: absolute;
+}
+
+#ipadContent {
+	position: absolute;
+	top: 26px;
+	left: 66px;
+	background: #369;
+	width: 512px;
+	height: 384px;
+}
+
 
 .jumbotron {
 	background: #323239;
@@ -46,7 +80,7 @@ h2 {
 }
 
 .about {
-	
+
 	background: #39C0AA;
 }
 
@@ -58,5 +92,7 @@ h2 {
 	background: #8DC936;
 }
 
-
+.row p {
+	color: #fff;
+}
 
