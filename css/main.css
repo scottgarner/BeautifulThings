@@ -42,8 +42,9 @@ footer {
 #ipadCenter {
 	position: relative;
 	width: 100%;
-	height: 500px;
+	height: 508px;
 	background: #fff;
+	border-bottom: 8px solid #DABA3A;
 }
 
 #ipad {
@@ -61,7 +62,6 @@ footer {
 	position: absolute;
 	top: 26px;
 	left: 66px;
-	background: #369;
 	width: 512px;
 	height: 384px;
 }
