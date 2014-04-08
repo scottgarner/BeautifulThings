@@ -40,7 +40,7 @@ footer a {
 	color: #fff;
 }
 
-#ipadCenter {
+#header {
 	position: relative;
 	width: 100%;
 	height: 538px;
@@ -50,20 +50,24 @@ footer a {
 
 #ipad {
 	position: relative;
-	top: 32px;
+	top: 58px;
 	left: 50%;
-	margin-left: -322px;
+	margin-left: -256px;
+	background: #469;
 }
 
 #ipadFrame {
 	position: absolute;
+	top: -26px;
+	left: -66px;	
 }
 
 #ipadContent {
 	position: absolute;
-	top: 26px;
-	left: 66px;
-	width: 512px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	max-width: 512px;
 	height: 384px;
 }
 
@@ -71,6 +75,35 @@ footer a {
 	position: absolute;
 	bottom: 15px;
 	width: 100%;
+}
+
+@media (max-width: 512px) {
+	#header {
+		height: auto;
+		padding-top: 16px;
+		position: relative;
+	}
+	#ipad {
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-left: 0;
+	}
+	#ipadContent {
+		width: 100%;
+		height: auto;
+		position: relative;		
+	}
+  #ipadFrame {
+    display: none;
+  }
+  #buttonContainer {
+  	position: relative;
+  	bottom: 0;
+  	margin: 16px 0;
+  }
 }
 
 #content {
@@ -91,6 +124,10 @@ footer a {
 
 .purchase {
 	background: #8DC936;
+}
+
+.author {
+	background: #B100E9;
 }
 
 .card {
