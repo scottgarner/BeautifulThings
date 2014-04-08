@@ -53,7 +53,6 @@
     top: 58px;
     left: 50%;
     margin-left: -256px;
-    background: #469;
   }
 
   #ipadFrame {
@@ -101,7 +100,7 @@
     #ipadContent {
       width: 100%;
       height: auto;
-      position: relative;   
+      position: relative;  
     }
     #ipadFrame {
       display: none;
