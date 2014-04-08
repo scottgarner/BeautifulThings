@@ -78,6 +78,9 @@ footer a {
 }
 
 @media (max-width: 512px) {
+	body {
+		font-size: 11pt;;
+	}
 	#header {
 		height: auto;
 		padding-top: 16px;
