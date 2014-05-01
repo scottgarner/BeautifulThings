@@ -39,6 +39,11 @@ footer a, footer a:hover {
   position: relative;
   height: 538px;
   background: #fff;
+  background-image: url(../img/background.jpg);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center; 
+  background-size: cover;
   border-bottom: 8px solid #DABA3A;
 }
 
@@ -110,12 +115,12 @@ footer a, footer a:hover {
   margin: auto;
 }
 
-.about {
+.issues {
 
-  background: #39C0AA;
+  background: #F8860F;
 }
 
-.issues {
+.about {
   background: #F67075;
 }
 
