@@ -39,6 +39,7 @@ footer a, footer a:hover {
   position: relative;
   height: 534px;
   background: #44BE9D;
+  background-image: url('../img/background.jpg');
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position:center; 
@@ -79,6 +80,7 @@ footer a, footer a:hover {
   max-width: 512px;
   height: auto;
   width: 100%;
+  background: #323239;
 }
 
 #ipadVideo {

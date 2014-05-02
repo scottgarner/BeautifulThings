@@ -5,6 +5,8 @@ $(document).ready( function() {
 	$("#watchVideo").click( function() {
 		$("#ipadImage").fadeOut("slow", function() {
 			popcorn.play();
+			$('.carousel').carousel('pause');
+			$('.carousel').carousel(0);
 		});
 	});
 
@@ -16,7 +18,7 @@ $(document).ready( function() {
 	popcorn.on("ended", function() {
 		
 		$("#ipadVideo").fadeOut("slow", function() {
-			$('.carousel').carousel(0);
+			$('.carousel').carousel('cycle');
 			$("#ipadImage").fadeIn();
 		});
 
