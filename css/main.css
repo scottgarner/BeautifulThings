@@ -72,6 +72,7 @@ footer a, footer a:hover {
   width: 100%;
   max-width: 512px;
   height: 384px;
+  background: #323239;
 }
 
 #coverImage, #videoTrailer {
