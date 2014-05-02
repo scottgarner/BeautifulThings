@@ -2,7 +2,7 @@ body {
   background: #323239;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 12pt;
   color: #fff;
 }
 
@@ -37,14 +37,13 @@ footer a, footer a:hover {
 
 #header {
   position: relative;
-  height: 538px;
-  background: #fff;
-  background-image: url(../img/background.jpg);
+  height: 534px;
+  background: #44BE9D;
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position:center; 
   background-size: cover;
-  border-bottom: 8px solid #DABA3A;
+  border-bottom: 4px solid #DABA3A;
 }
 
 #ipad {
@@ -53,21 +52,37 @@ footer a, footer a:hover {
   left: 50%;
   margin-left: -256px;
   width: 640px;
+  background: #323239;
 }
 
-#ipadFrame {
+#ipadFrame, #ipadGlare {
   position: absolute;
   top: -26px;
   left: -66px;  
 }
 
-#ipadContent {
+#ipadGlare {
+  z-index: 999;
+}
+
+#ipadVideo, #ipadImage {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   max-width: 512px;
   height: 384px;
+}
+
+#coverImage, #videoTrailer {
+  max-width: 512px;
+  height: auto;
+  width: 100%;
+}
+
+#ipadVideo {
+  display: none;
+
 }
 
 #buttonContainer {
@@ -82,7 +97,6 @@ footer a, footer a:hover {
   }
   #header {
     height: auto;
-    padding-top: 16px;
     position: relative;
   }
   #ipad {
@@ -93,12 +107,12 @@ footer a, footer a:hover {
     left: 0;
     margin-left: 0;
   }
-  #ipadContent {
+  #ipadVideo, #ipadImage {
     width: 100%;
     height: auto;
     position: relative;  
   }
-  #ipadFrame {
+  #ipadFrame, #ipadGlare {
     display: none;
   }
   #buttonContainer {
@@ -110,8 +124,8 @@ footer a, footer a:hover {
 
 #content {
   width: 100%;
-  max-width: 640px;
-  padding: 0 16px;
+  max-width: 552px;
+  padding: 0 20px;
   margin: auto;
 }
 

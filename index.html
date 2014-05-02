@@ -16,17 +16,28 @@
 <body>
 
   <div id="header">
+
     <div id="ipad">
       <img id="ipadFrame" src="img/ipad-blank.png" width="644" height="435"/>
-      <div id="ipadContent">
-        <iframe src="//player.vimeo.com/video/90921901" width="512" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <img id="ipadGlare" src="img/ipad-glare.png" width="644" height="435"/>
+      <div id="ipadImage">
+        <img id="coverImage" src="img/cover.jpg" width="512" height="384"/>
+      </div>
+      <div id="ipadVideo">
+        <video width="512" height="384" id="videoTrailer"> 
+          <source src="img/intro.mp4"></source>
+          <source src="img/intro.webm"></source>
+        </video>
       </div>
     </div>
 
     <div id="buttonContainer" class="text-center">
-      <!--<button id="buyNow" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-book"></span> BUY NOW FOR 50% OFF</button>-->
-      <a id="buyNow" type="button" class="btn btn-primary" href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754"><span class="glyphicon glyphicon-book"></span> AVAILABLE NOW</a>
+       <div class="btn-group">
+        <button id="watchVideo" type="button" class="btn btn-primary btn-sm" href=""><span class="glyphicon glyphicon-film"></span> VIEW INTRO VIDEO</button>
+        <a id="buyNow" type="button" class="btn btn-primary btn-sm" href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754"><span class="glyphicon glyphicon-book"></span> DOWNLOAD NOW</a>
+      </div>
     </div>
+
   </div>
 
   <div id="content">
@@ -35,20 +46,19 @@
       Making Things Beautiful / Making Beautiful Things is an interactive book that investigates the difficulties and delights associated with the human drive to create. I wrote it for my master's thesis to explore my creative process and perhaps help others struggling with their own.
     </div>
 
-    <h2 class="issues">Early Access</h2>
-    <div class="card">
-      This book is available as an "early access" product while I continue to expand and refine the content and functionality. Updates will be delivered automatically and at no cost. If you stumble across any problems or errors, please <a href="https://github.com/scottgarner/makingthingsbeautiful/issues">file an issue</a>.
-    </div>
-
-
     <h2 class="purchase">Purchase</h2>
     <div class="card">
-      Making Things Beautiful / Making Beautiful Things was built exclusively for <a href="http://www.apple.com/ibooks/">Apple iBooks</a> on your iPad or Mac. You can buy it or download the first chapter for free from the <a href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754">iBooks Store</a>.
+      This book was built exclusively for <a href="http://www.apple.com/ibooks/">Apple iBooks</a> on your iPad or Mac. You can buy it or download a chapter for free from the <a href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754">iBooks Store</a>.
+    </div>    
+
+    <h2 class="issues">Early Access</h2>
+    <div class="card">
+      Making Things Beautiful / Making Beautiful Things is available as an "early access" product while I continue to expand and refine the content and functionality. Updates will be delivered automatically and at no cost. If you stumble across any problems, please <a href="https://github.com/scottgarner/makingthingsbeautiful/issues">file an issue</a>.
     </div>
 
     <h2 class="author">Author</h2>
     <div class="card">
-      I'm <a href="http://scott.j38.net/about/">Scott Garner</a> and I make things. You might know me from projects like <a href="http://scott.j38.net/interactive/still_life/">Still Life</a>, <a href="http://scott.j38.net/interactive/beetbox/">the BeetBox</a> or <a href="http://scott.j38.net/interactive/hellisotherpeople/">Hell is Other People</a>. You can view other work in my <a href="http://scott.j38.net/">portfolio</a> and follow me on <a href="http://twitter.com/scottgarner">Twitter</a> and <a href="http://scottgarner.tumblr.com/">Tumblr</a> to see what I'm up to.
+      I'm <a href="http://scott.j38.net/about/">Scott Garner</a> and I make things. You might know me from projects like <a href="http://scott.j38.net/interactive/still_life/">Still Life</a>, <a href="http://scott.j38.net/interactive/beetbox/">The BeetBox</a> or <a href="http://scott.j38.net/interactive/hellisotherpeople/">Hell is Other People</a>. You can view other work in my <a href="http://scott.j38.net/">portfolio</a> and follow me on <a href="http://twitter.com/scottgarner">Twitter</a> and <a href="http://scottgarner.tumblr.com/">Tumblr</a>.
     </div>
 
     <hr/>
@@ -63,6 +73,7 @@
 
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/vendor/jquery.fitvids.js"></script>
+  <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
 
   <script src="js/main.js"></script>
 
@@ -71,10 +82,6 @@
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src='//www.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
-
-    $(document).ready( function () {
-      $("#ipadContent").fitVids();
-    });
   </script>
 </body>
 </html>
