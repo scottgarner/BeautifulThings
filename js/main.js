@@ -3,8 +3,8 @@ var popcorn;
 $(document).ready( function() {
 
 	$("#watchVideo").click( function() {
-		$("#coverImage").fadeOut("slow", function() {
-			popcorn.play(0);
+		$("#ipadImage").fadeOut("slow", function() {
+			popcorn.play();
 		});
 	});
 
@@ -16,9 +16,12 @@ $(document).ready( function() {
 	popcorn.on("ended", function() {
 		
 		$("#ipadVideo").fadeOut("slow", function() {
-			$("#coverImage").fadeIn();
+			$('.carousel').carousel(0);
+			$("#ipadImage").fadeIn();
 		});
 
 	});
+
+	$('.carousel').carousel();
 
 });
