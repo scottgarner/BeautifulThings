@@ -4,6 +4,7 @@ $(document).ready( function() {
 
 	$("#watchVideo").click( function() {
 		$("#ipadImage").fadeOut("slow", function() {
+			$("#ipadVideo").show();
 			popcorn.play();
 			$('.carousel').carousel('pause');
 			$('.carousel').carousel(0);
@@ -12,9 +13,6 @@ $(document).ready( function() {
 
 	popcorn = Popcorn("#videoTrailer");
 
-	popcorn.on("playing", function() {
-		$("#ipadVideo").show();
-	});
 	popcorn.on("ended", function() {
 		
 		$("#ipadVideo").fadeOut("slow", function() {
