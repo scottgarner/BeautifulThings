@@ -2,7 +2,7 @@ body {
   background: #323239;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  font-size: 13pt;
+  font-size: 12pt;
   color: #fff;
 }
 
@@ -37,14 +37,14 @@ footer a, footer a:hover {
 
 #header {
   position: relative;
-  height: 628px;
+  height: 624px;
   background: #44BE9D;
   background-image: url('../img/background.jpg');
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position:center; 
   background-size: cover;
-  border-bottom: 4px solid #DABA3A;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.25);
 }
 
 #ipad {
@@ -59,7 +59,7 @@ footer a, footer a:hover {
 #ipadFrame, #ipadGlare {
   position: absolute;
   top: -32px;
-  left: -83px;  
+  left: -82px;  
 }
 
 #ipadGlare {
@@ -153,4 +153,16 @@ footer a, footer a:hover {
   color: #666;
   padding: 12px 16px;
   background: #fff;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background: #31A4B8;
+  border-color: #2194A8;
+}
+
+.btn-primary:active, .btn-primary:hover {
+  background: #2194A8;
+  border-color: #118498;
 }
