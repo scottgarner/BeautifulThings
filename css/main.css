@@ -2,7 +2,7 @@ body {
   background: #323239;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 13pt;
   color: #fff;
 }
 
@@ -27,12 +27,13 @@ h2 {
 }
 
 footer {
+  background: #fff;
   font-size: .8em;
-  padding-bottom: 12px;
+  padding: 12px;
 }
 
 footer a, footer a:hover {
-  color: #fff;
+  color: #666;
 }
 
 #header {
@@ -45,6 +46,7 @@ footer a, footer a:hover {
   background-position:center; 
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+  z-index:1;
 }
 
 #ipad {
@@ -114,44 +116,146 @@ footer a, footer a:hover {
     height: auto;
     position: relative;  
   }
+  #ipadVideo {
+    display: none;
+  }
   #ipadFrame, #ipadGlare {
     display: none;
   }
   #buttonContainer {
     position: relative;
     bottom: 0;
-    margin: 16px 0;
+    padding: 16px 0;
   }
 }
 
+
+/* Body */
+
 #content {
+  margin: auto;
+  max-width: 806px;
+}
+
+.section {
+  padding-bottom: 8px;
+}
+
+.card {
   width: 100%;
-  max-width: 640px;
+  max-width: 580px;
   padding: 0 20px;
   margin: auto;
 }
 
-.issues {
-
-  background: #F8860F;
+.jumbo {
+  padding: 1.8em 20px 1em 20px;
+  font-size: 1.3em;
 }
 
-.about {
-  background: #F67075;
-}
-
-.purchase {
-  background: #8DC936;
-}
-
-.author {
-  background: #B100E9;
-}
-
-.card {
-  color: #666;
-  padding: 12px 16px;
+h2.about {
+  color: #F67075;
   background: #fff;
+}
+
+div.about {
+  background: #D76F8C;  
+
+  position: relative;
+  z-index: 0;
+  box-shadow: inset 0px -4px 4px rgba(0,0,0,.25);   
+}
+
+h2.purchase {
+  background: #1AA892;
+  color: #fff;
+}
+
+div.purchase {
+  padding-top: 1.4em;
+  padding-bottom: 1.4em; 
+  color: #666;
+  background: #EFEFEF;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+}
+
+div.purchase hr {
+  border-color: #999;
+}
+
+div.purchase img {
+  width: 30%;
+  max-width: 150px;
+  height: auto;
+  float: left;
+  margin-right: 5%;
+}
+
+h2.issues {
+  color: #31A4B8;
+  background: #fff;
+}
+
+div.issues {
+  background: #31A4B8;
+  padding-top: .8em;
+  padding-bottom: 1.4em;  
+
+  position: relative;
+  z-index: 0;
+  box-shadow: inset 0px -4px 4px rgba(0,0,0,.25);    
+}
+
+div.issues .btn {
+  color: #31A4B8;
+}
+
+img.prints {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+h2.prints {
+  color: #fff;
+  background: #D76F8C;  
+}
+
+div.prints {
+  color: #666;
+  background: #EFEFEF;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+}
+
+div.prints hr {
+  border-color: #999;
+}
+
+h2.author {
+  color: #1AA892;
+  background: #fff;
+}
+
+div.author {
+  background: #1AA892;
+  padding-top: .8em;
+  padding-bottom: 1.4em; 
+
+  position: relative;
+  z-index: 0;
+  box-shadow: inset 0px -4px 4px rgba(0,0,0,.25);   
+}
+
+div.author .btn {
+  color: #1AA892;
 }
 
 /* Buttons */
@@ -164,4 +268,28 @@ footer a, footer a:hover {
 .btn-primary:active, .btn-primary:hover {
   background: #2194A8;
   border-color: #118498;
+}
+
+.btn-purchase {
+  background: #1AA892;
+  border-color: #0A9882;
+  color: white;
+}
+
+.btn-purchase:active, .btn-purchase:hover {
+  background: #0A9882;
+  border-color: #008872;
+  color: white;
+}
+
+.btn-prints {
+  background: #D76F8C;
+  border-color: #c75F7C;
+  color: white;
+}
+
+.btn-prints:active, .btn-prints:hover {
+  background: #c75F7C;
+  border-color: #b74F6C;
+  color: white;
 }

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
+
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -60,41 +62,95 @@
 
     <div id="buttonContainer" class="text-center">
        <div class="btn-group">
-        <a class="btn btn-primary btn-sm" href="#slideshow" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>       
-        <button id="watchVideo" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-film"></span> INTRO VIDEO</button>
-        <a id="buyNow" class="btn btn-primary btn-sm" href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754"><span class="glyphicon glyphicon-book"></span> DOWNLOAD NOW</a>
-        <a class="btn btn-primary btn-sm" href="#slideshow" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>       
+        <a class="btn btn-primary btn-sm" href="#slideshow" data-slide="prev"><i class="fa fa-chevron-left"></i></a>       
+        <button id="watchVideo" type="button" class="btn btn-primary btn-sm"><i class="fa fa-film"></i> INTRO VIDEO</button>
+        <a class="btn btn-primary btn-sm" href="#slideshow" data-slide="next"><i class="fa fa-chevron-right"></i></a>       
       </div>
     </div>
 
   </div>
 
   <div id="content">
-    <h2 class="about">About</h2>
-    <div class="card">
-      Making Things Beautiful / Making Beautiful Things is an interactive book that investigates the difficulties and delights associated with the human drive to create. I wrote it for my master's thesis to explore my creative process and hopefully help others struggling with their own.
+
+    <div class="section about">
+      <div class="card jumbo">
+
+        <p>Making Things Beautiful / Making Beautiful Things is an interactive book that investigates the difficulties and delights associated with the human drive to create.</p>
+
+      </div>
     </div>
 
-    <h2 class="purchase">Purchase</h2>
-    <div class="card">
-      This book was built exclusively for Apple iBooks on your iPad or Mac. You can buy it or download a chapter for free from the <a href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754">iBooks Store</a>. Prints of the book's artwork are available from <a href="http://www.inprnt.com/gallery/scottgarner/">INPRNT</a> and <a href="http://society6.com/scottgarner">Society6</a>.
+    <div class="section purchase">
+      <div class="card">
+
+      <h2 class="purchase">Purchase</h2><br/>
+
+        <img alt="" src="img/book.png" width="150" height="222">
+
+        <p>I wrote this book for my master's thesis at NYU to examine my creative process and perhaps help others struggling with their own.</p>
+
+        <p>Buy it now for iBooks on your iPad or Mac or download a sample chapter for free.</p>
+
+        <hr/>
+
+        <p><a id="buyNow" class="btn btn-purchase" href="https://itunes.apple.com/us/book/making-things-beautiful-making/id860605754"><i class="fa fa-book"></i> DOWNLOAD NOW</a></p>
+
+        <div class="clearfix"></div>
+
+     </div> 
+    </div>
+
+    <div class="section issues">
+      <div class="card">
+        <h2 class="issues">Early Access</h2>
+
+        <p>The book is currently available as an "early access" product as I continue to expand and refine the content and functionality. If you stumble across any problems, please file an issue.</p>
+
+        <hr/>
+
+        <a class="btn btn-default btn-md" href="https://github.com/scottgarner/makingthingsbeautiful/issues"><i class="fa fa-warning"></i> VISIT GITHUB</a>
+      </div>
+    </div>
+
+    <div class="section prints">
+      <div class="card">
+
+        <h2 class="prints">prints</h2>
+
+        <p><img class="prints" alt="" src="img/frames.jpg" width="540" height="142"/></p>
+
+        <p>Every page features a unique design exploration. A selection of these artworks available as high-quality prints from INPRNT and Society6.<p>
+
+        <hr/>
+
+        <a class="btn btn-prints" href="http://www.inprnt.com/gallery/scottgarner/"><i class="fa fa-shopping-cart"></i> SHOP INPRNT</a>
+        <a class="btn btn-prints" href="http://society6.com/scottgarner"><i class="fa fa-shopping-cart"></i> SHOP SOCIETY6</a>
+
+      </div> 
     </div>    
+      
+    <div class="section author">    
+      <div class="card">
+        <h2 class="author">Author</h2>
+        
+        <p>I'm Scott Garner and I make things. You can view more of my work in my portfolio and follow me on Twitter and Tumblr to see what I'm up to.</p>
+      
+      <hr/>
 
-    <h2 class="issues">Early Access</h2>
-    <div class="card">
-      Making Things Beautiful / Making Beautiful Things is available as an "early access" product while I continue to expand and refine the content and functionality. Updates will be delivered automatically and at no cost. If you stumble across any problems, please <a href="https://github.com/scottgarner/makingthingsbeautiful/issues">file an issue</a>.
+        <a class="btn btn-default btn-md" href="http://scott.j38.net"><i class="fa fa-picture-o"></i> PORTFOLIO</a>
+
+        <a class="btn btn-default btn-md" href="http://twitter.com/scottgarner/"><i class="fa fa-twitter"></i> TWITTER</a>
+
+        <a class="btn btn-default btn-md" href="http://scottgarner.tumblr.com"><i class="fa fa-tumblr"></i> TUMBLR</a>                
+
+
+      </div>     
     </div>
 
-    <h2 class="author">Author</h2>
-    <div class="card">
-      I'm <a href="http://scott.j38.net/about/">Scott Garner</a> and I make things. You might know me from projects like <a href="http://scott.j38.net/interactive/still_life/">Still Life</a>, <a href="http://scott.j38.net/interactive/beetbox/">The BeetBox</a> or <a href="http://scott.j38.net/interactive/hellisotherpeople/">Hell is Other People</a>. You can view other work in my <a href="http://scott.j38.net/">portfolio</a> and follow me on <a href="http://twitter.com/scottgarner">Twitter</a> and <a href="http://scottgarner.tumblr.com/">Tumblr</a>.
-    </div>
+      <footer class="text-center">
+        <a href="http://scott.j38.net/">&copy; Scott Garner 2014</a>
+      </footer> 
 
-    <hr/>
-
-    <footer class="text-center">
-      <a href="http://scott.j38.net/">&copy; Scott Garner 2014</a>
-    </footer>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
