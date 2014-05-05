@@ -52,19 +52,20 @@
           </div>
         </div>
       </div>
+
       <div id="ipadVideo">
-        <video width="640" height="480" id="videoTrailer"> 
-          <source src="img/intro.mp4">
-          <source src="img/intro.ogv">
-        </video>
+          <video width="640" height="480" id="videoTrailer"> 
+            <source src="img/intro.mp4" type="video/mp4">
+            <source src="img/intro.ogv" type="video/ogg">
+          </video>
       </div>
     </div>    
 
     <div id="buttonContainer" class="text-center">
        <div class="btn-group">
-        <a class="btn btn-primary btn-sm" href="#slideshow" data-slide="prev"><i class="fa fa-chevron-left"></i></a>       
-        <button id="watchVideo" type="button" class="btn btn-primary btn-sm"><i class="fa fa-film"></i> INTRO VIDEO</button>
-        <a class="btn btn-primary btn-sm" href="#slideshow" data-slide="next"><i class="fa fa-chevron-right"></i></a>       
+        <a class="btn btn-primary" href="#slideshow" data-slide="prev"><i class="fa fa-chevron-left"></i></a>       
+        <button id="watchVideo" type="button" class="btn btn-primary"><i class="fa fa-film"></i> INTRO VIDEO</button>
+        <a class="btn btn-primary" href="#slideshow" data-slide="next"><i class="fa fa-chevron-right"></i></a>       
       </div>
     </div>
 
@@ -85,11 +86,11 @@
 
       <h2 class="purchase">Purchase</h2><br/>
 
-        <img alt="" src="img/book.png" width="150" height="222">
+        <img alt="" src="img/book@2x.png" width="150" height="222">
 
         <p>I wrote this book for my master's thesis at NYU to examine my creative process and perhaps help others struggling with their own.</p>
 
-        <p>Buy it now for iBooks on your iPad or Mac or download a sample chapter for free.</p>
+        <p>Buy it now for iBooks on your iPad or Mac, or download a sample chapter for free.</p>
 
         <hr/>
 
@@ -100,26 +101,28 @@
      </div> 
     </div>
 
-    <div class="section issues">
+    <div class="section features">    
       <div class="card">
-        <h2 class="issues">Early Access</h2>
+        <h2 class="features">Features</h2>
+        
+        <ul>
+          <li>8 chapters and 40+ subsections.</li>
+          <li>52 pages of retina-quality photographic design explorations.</li>
+          <li>Interactive illustrations and annotations.</li>
+          <li>Free updates to future releases.</li>
+        </ul>
 
-        <p>The book is currently available as an "early access" product as I continue to expand and refine the content and functionality. If you stumble across any problems, please file an issue.</p>
-
-        <hr/>
-
-        <a class="btn btn-default" href="https://github.com/scottgarner/makingthingsbeautiful/issues"><i class="fa fa-warning"></i> VISIT GITHUB</a>
-      </div>
-    </div>
+      </div>     
+    </div> 
 
     <div class="section prints">
       <div class="card">
 
-        <h2 class="prints">prints</h2>
+        <h2 class="prints">Prints</h2>
 
-        <p><img class="prints" alt="" src="img/frames.jpg" width="540" height="142"/></p>
+        <p><img class="prints" alt="" src="img/frames@2x.jpg" width="540" height="142"/></p>
 
-        <p>Every page features a unique design exploration. A selection of these artworks available as high-quality prints from INPRNT and Society6.<p>
+        <p>Every page features a unique design exploration. A selection of these artworks are available as high-quality prints from INPRNT and Society6.<p>
 
         <hr/>
 
@@ -129,19 +132,31 @@
       </div> 
     </div>    
       
+    <div class="section issues">
+      <div class="card">
+        <h2 class="issues">Early Access</h2>
+
+        <p>This book is available as an "early access" product while I continue to expand and refine its content and functionality. If you stumble across any problems, please file an issue.</p>
+
+        <hr/>
+
+        <a class="btn btn-default" href="https://github.com/scottgarner/makingthingsbeautiful/issues"><i class="fa fa-warning"></i> ISSUE TRACKER</a>
+      </div>
+    </div>           
+
     <div class="section author">    
       <div class="card">
         <h2 class="author">Author</h2>
         
-        <p>I'm Scott Garner and I make things. You can view more of my work in my portfolio and follow me on Twitter and Tumblr to see what I'm up to.</p>
+        <p>I'm Scott Garner and I make things. You can see more projects on my portfolio site and follow me on Twitter and Tumblr to see what I'm up to.</p>
       
-      <hr/>
+        <hr/>
 
-        <a class="btn btn-default" href="http://scott.j38.net"><i class="fa fa-picture-o"></i> PORTFOLIO</a>
+        <a class="btn btn-author" href="http://scott.j38.net"><i class="fa fa-briefcase"></i> PORTFOLIO</a>
 
-        <a class="btn btn-default" href="http://twitter.com/scottgarner/"><i class="fa fa-twitter"></i> TWITTER</a>
+        <a class="btn btn-author" href="http://twitter.com/scottgarner/"><i class="fa fa-twitter"></i> TWITTER</a>
 
-        <a class="btn btn-default" href="http://scottgarner.tumblr.com"><i class="fa fa-tumblr"></i> TUMBLR</a>                
+        <a class="btn btn-author" href="http://scottgarner.tumblr.com"><i class="fa fa-tumblr-square"></i> TUMBLR</a>                
 
 
       </div>     
@@ -157,7 +172,6 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/jquery.fitvids.js"></script>
   <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
 
   <script src="js/main.js"></script>

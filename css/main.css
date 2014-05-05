@@ -27,7 +27,7 @@ h2 {
 }
 
 footer {
-  background: #fff;
+  background: #efefef;
   font-size: .8em;
   padding: 12px;
 }
@@ -36,9 +36,10 @@ footer a, footer a:hover {
   color: #666;
 }
 
+/* Header */
+
 #header {
   position: relative;
-  height: 624px;
   background: #44BE9D;
   background-image: url('../img/background.jpg');
   background-repeat:no-repeat;
@@ -47,24 +48,32 @@ footer a, footer a:hover {
   background-size: cover;
   box-shadow: 0px 4px 4px rgba(0,0,0,.25);
   z-index:1;
+
+  padding: 20px 20px 10px 20px;
 }
 
 #ipad {
   position: relative;
-  top: 52px;
-  left: 50%;
-  margin-left: -320px;
-  width: 640px;
-  background: #323239;
+  margin: auto;
+  width: 100%;
+  max-width: 806px;
+  height: auto;
 }
 
 #ipadFrame, #ipadGlare {
-  position: absolute;
-  top: -32px;
-  left: -82px;  
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 #ipadGlare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;  
   z-index: 999;
 }
 
@@ -74,27 +83,43 @@ footer a, footer a:hover {
 
 #ipadVideo, #ipadImage {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  max-width: 640px;
-  height: 480px;
+  top: 0;
+  left: 0;
+  margin: 03.970223325% 10.17369727%;
+  width: 79.4044665%;
+  height: 88.23529412%;
   background: #323239;
 }
 
-#coverImage, #videoTrailer {
-  max-width: 640px;
-  height: auto;
+#videoTrailer {
+  display: block;
+  position: absolute;
   width: 100%;
-  background: #323239;
+  height: 100%;
+  top: 0;
 }
 
 #buttonContainer {
-  position: absolute;
-  bottom: 15px;
+  margin-top: 10px;
+  position: relative;
   width: 100%;
 }
 
+
+@media (max-width: 640px) {
+  body {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+/*
 @media (max-width: 640px) {
   body {
     font-size: 11pt;;
@@ -128,6 +153,7 @@ footer a, footer a:hover {
     padding: 16px 0;
   }
 }
+*/
 
 
 /* Body */
@@ -153,6 +179,10 @@ footer a, footer a:hover {
   font-size: 1.3em;
 }
 
+ul {
+  font-size: 1.1em;
+}
+
 h2.about {
   color: #F67075;
   background: #fff;
@@ -175,7 +205,7 @@ div.purchase {
   padding-top: 1.4em;
   padding-bottom: 1.4em; 
   color: #666;
-  background: #EFEFEF;
+  background: white;
 
   position: relative;
   z-index: 1;
@@ -194,12 +224,12 @@ div.purchase img {
   margin-right: 5%;
 }
 
-h2.issues {
+h2.features {
   color: #31A4B8;
   background: #fff;
 }
 
-div.issues {
+div.features {
   background: #31A4B8;
   padding-top: .8em;
   padding-bottom: 1.4em;  
@@ -209,7 +239,7 @@ div.issues {
   box-shadow: inset 0px -4px 4px rgba(0,0,0,.25);    
 }
 
-div.issues .btn {
+div.features .btn {
   color: #31A4B8;
 }
 
@@ -226,7 +256,7 @@ h2.prints {
 
 div.prints {
   color: #666;
-  background: #EFEFEF;
+  background: white;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 
@@ -239,12 +269,12 @@ div.prints hr {
   border-color: #999;
 }
 
-h2.author {
+h2.issues {
   color: #1AA892;
   background: #fff;
 }
 
-div.author {
+div.issues {
   background: #1AA892;
   padding-top: .8em;
   padding-bottom: 1.4em; 
@@ -254,16 +284,31 @@ div.author {
   box-shadow: inset 0px -4px 4px rgba(0,0,0,.25);   
 }
 
-div.author .btn {
+div.issues .btn {
   color: #1AA892;
 }
 
-/* Buttons */
-
-.btn {
-  margin-top: 2px;
-  margin-bottom: 2px;
+h2.author {
+  color: #fff;
+  background: #00A7BB;  
 }
+
+div.author {
+   color: #666;
+  background: white;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+}
+
+div.author hr {
+  border-color: #999;
+}
+
+/* Buttons */
 
 .btn-primary {
   background: #31A4B8;
@@ -296,5 +341,17 @@ div.author .btn {
 .btn-prints:active, .btn-prints:hover {
   background: #c75F7C;
   border-color: #b74F6C;
+  color: white;
+}
+
+.btn-author {
+  background: #00A7BB;
+  border-color: #0097aB;
+  color: white;
+}
+
+.btn-author:active, .btn-author:hover {
+  background: #0097aB;
+  border-color: #00879B;
   color: white;
 }

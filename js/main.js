@@ -3,24 +3,20 @@ var popcorn;
 $(document).ready( function() {
 
 	$("#watchVideo").click( function() {
+		
 		$("#ipadImage").fadeOut("slow", function() {
-			$("#ipadVideo").show();
-			popcorn.play(0);
 			$('.carousel').carousel(0);
 			$('.carousel').carousel('pause');
-			
 		});
+
+		$("#videoTrailer")[0].play();
 	});
 
-	popcorn = Popcorn("#videoTrailer");
+	$("#videoTrailer").bind("ended", function() {
 
-	popcorn.on("ended", function() {
-		
 		$("#ipadImage").fadeIn("slow", function() {
-			$("#ipadVideo").hide();
 			$('.carousel').carousel('cycle');
 		});
-
 	});
 
 	$('.carousel').carousel();
