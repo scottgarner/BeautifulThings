@@ -260,6 +260,11 @@ div.author .btn {
 
 /* Buttons */
 
+.btn {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .btn-primary {
   background: #31A4B8;
   border-color: #2194A8;
