@@ -306,10 +306,32 @@ div.author {
 div.author hr {
   border-color: #999;
 }
+
 div.author img {
-  width: 100%;
-  max-width: 540px;
+  width: 30%;
+  max-width: 150px;
   height: auto;
+  float: left;
+  margin-right: 5%;
+}
+
+h2.learn {
+  color: #D76F8C;
+  background: #fff;
+}
+
+div.learn {
+  background: #D76F8C;
+  padding-top: .6em;
+  padding-bottom: 1.6em;
+
+  position: relative;
+  z-index: 0;
+  box-shadow: inset 0px -4px 4px rgba(0,0,0,.25);   
+}
+
+div.learn .btn {
+  color: #D76F8C;
 }
 
 /* Buttons */
